@@ -42,10 +42,10 @@ function App() {
       direction="column"
       justifyContent="center"
       position="relative"
-      h="54rem"
+      h={["100rem", "100rem", "54rem"]}
       margin="auto"
     >
-      <Box bg="#805AD5" h="50%"></Box>
+      <Box bg="purple.600" h="50%"></Box>
       <Box bg="white" h="50%"></Box>
       <Box
         position="absolute"
@@ -57,27 +57,26 @@ function App() {
         alignItems="center"
         gap="2rem"
       >
-        <Heading fontSize="48px" color="white" fontWeight="800">
+        <Heading
+          fontSize={["3xl", "3xl", "5xl"]}
+          color="white"
+          fontWeight="800"
+        >
           Simple Pricing For Your Business
         </Heading>
-        <Text fontSize="24px" fontWeight="400" color="white">
+        <Text fontSize={["lg", "lg", "2xl"]} fontWeight="400" color="white">
           Plans that are carefully craftes to suit your business
         </Text>
 
-        <HStack
+        <Flex
           bg="white"
           borderRadius="10px"
-          width="60rem"
-          height="20rem"
+          width={["30rem", "30rem", "60rem"]}
           shadow="md"
+          overflow="hidden"
+          direction={["column", "column", "row"]}
         >
-          <Box
-            h="100%"
-            w="35%"
-            bg="#E9D8FD"
-            borderTopLeftRadius="10px"
-            borderBottomLeftRadius="10px"
-          >
+          <Box h="100%" w={["100%", "100%", "35%"]} bg="gray.200">
             <Flex
               h="100%"
               direction="column"
@@ -109,12 +108,19 @@ function App() {
               ))}
             </Stack>
           </Box>
-        </HStack>
+        </Flex>
 
-        <Flex w="60rem" justifyContent="space-between"  gap="2rem"  fontWeight="800" fontSize="18px">
+        <Flex
+          w={["100%","100%","60rem"]}
+          justifyContent="space-between"
+          gap="2rem"
+          fontWeight="800"
+          fontSize="18px"
+          direction={["column", "column", "row"]}
+        >
           {benefits.map((data, i) => (
             <>
-              <Box key={i} w="30%" >
+              <Box key={i} w="30%">
                 {data.text}
               </Box>
             </>
