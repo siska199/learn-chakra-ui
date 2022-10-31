@@ -1,10 +1,71 @@
-
+import {
+  Box,
+  Stack,
+  Flex,
+  VStack,
+  HStack,
+  Heading,
+  Button,
+} from "@chakra-ui/react";
 
 function App() {
   return (
-    <div className="">
+    /*    
+      <Flex justifyContent="space-between" alignItems="center" className="">
+        <Box as="section" bg="green" w="120px" h="150px">
+          this is a box
+        </Box>
+        <Box as="section" bg="red" w="120px" h="150px">
+          this is a box
+        </Box>
+        <Box as="section" bg="blue" w="120px" h="150px">
+          this is a box
+        </Box>
+        <Box as="section" bg="pink" w="120px" h="150px">
+          this is a box
+        </Box>
+      </Flex>
+    */
 
-    </div>
+    /*
+      Stack is the combination HStack and VStack
+      Stack have props direction (row and column)
+
+      <HStack spacing="2rem" className="">
+        <Box as="section" bg="green" w="120px" h="150px">
+          this is a box
+        </Box>
+        <Box as="section" bg="red" w="120px" h="150px">
+          this is a box
+        </Box>
+        <Box as="section" bg="blue" w="120px" h="150px">
+          this is a box
+        </Box>
+        <Box as="section" bg="pink" w="120px" h="150px">
+          this is a box
+        </Box>
+      </HStack>
+    */
+
+    /*    
+        <Heading as="h1" size="xl" noOfLines={2}>
+          Siska Apriana Rifianti HAHAHA HIHIHI HHUHUHUH
+          emflka jkfnkesjrgn kjrngfaersj jnvkjdsnzkjv kjnvknsdkjz
+          jgnvksjnzk kjdgnvksjnk jkdfnbvkjnskjnvk
+          lnfbvsnlk
+          knbvsklnlk
+        </Heading>
+        <Box bg="pink" w="120px" h="120px" margin="auto" border="1px solid black">
+
+        </Box>
+    */
+    /*
+      <Button colorScheme="red" _hover={{ bg: "pink",width:"10rem", height:"4rem" }}>
+        My Button
+      </Button>
+    */
+
+    <div></div>
   );
 }
 
